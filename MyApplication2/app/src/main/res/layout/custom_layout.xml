@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner id"
+        android:id="@+id/ownerid1"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:id="@+id/ptext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:id="@+id/atext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Road no"
+        android:id="@+id/roadid1"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="249dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="House name"
+        android:id="@+id/hntext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House no"
+        android:id="@+id/hnotext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Floor"
+        android:id="@+id/ftext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="247dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat no"
+        android:id="@+id/fnotext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bedroom"
+        android:id="@+id/btext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="200dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Washroom"
+        android:id="@+id/wtext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:id="@+id/rtext"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>

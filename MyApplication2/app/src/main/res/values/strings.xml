@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application2</string>
+    <string-array name="REGISTER">
+        <item>OWNER</item>
+        <item>RENTER</item>
+    </string-array>
+    <string name="title_activity_post_house">post_house</string>
+</resources>

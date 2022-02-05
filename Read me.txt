@@ -1,0 +1,3 @@
+1.Insatall the apps first.
+2. Create an account as renter or owner.
+3.login in the system giving username and password. 

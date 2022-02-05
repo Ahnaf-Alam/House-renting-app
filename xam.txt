@@ -1,0 +1,72 @@
+Create table customer{
+   cid(int), cname char(40),address char (40), city char(20), state char(15),
+  primary key(cid)
+
+}
+CREATE TABLE product(
+   pid int,
+    pname char(15),
+    price double,
+    inventory int,
+    PRIMARY KEY (pid)
+)
+CREATE TABLE shipment(
+   
+    sid int,
+    cid int,
+    shipdate char (20),
+    PRIMARY KEY (sid),
+    FOREIGN key (cid)
+    REFERENCES customer (cid)
+
+)
+CREATE TABLE shipmentProduct(
+    sid int,
+    pid int,
+    ammount int,
+    FOREIGN key(sid)
+    REFERENCES customer (sid),
+    FOREIGN KEY (cid)
+    REFERENCES product (cid)
+    )                       
+INSERT INTO customer VALUES (101,"Ahnaf","chawkbazar","Chittagong","xyz");
+INSERT INTO customer VALUES ((102,"Pranta","dewanhat","Chittagong","xyz"),
+ (103,"Pranta","dewanhat","Chittagong","xyz"),
+  (104,"Sakib","bakolia","Chittagong","wea"),
+   (105,"Adnan","Boshundhara","Dhaka","xyz"))
+ 
+ INSERT INTO product VALUES (201,"Pencil",5.00,10),
+(202,"Pen",5.00,11),
+(203,"Book",120.00,12),
+(204,"Paper",5.00,13),
+(205,"Ball",30.00,14),
+(206,"Bat",600.00,15)
+
+
+INSERT INTO shipment VALUES 
+(1,202,"01/01/2019"),
+(2,204,"01/01/2019"),
+(3,205,"05/01/2019"),
+(4,206,"05/01/2019")
+
+INSERT INTO shipmentproduct VALUES
+(1,201,5),
+(2,203,10),
+(3,202,4),
+(4,204,3)
+
+
+SELECT pname,price * inventory 
+FROM product
+ORDER BY inventory
+
+SELECT sum(ammount)
+from shipmentproduct;
+
+SELECT DISTINCT customer .cid,customer.cname
+FROM customer,shipment
+WHERE customer.address LIKE '%Street%' AND shipment.cid = customer.cid;
+
+SELECT state, COUNT(*)
+FROM customer
+GROUP BY state;x
